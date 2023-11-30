@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Run tests if needed
-                    sh 'docker run -it jenkinsimg'
+                    sh 'docker run -i jenkinsimg'
                 }
             }
         }
