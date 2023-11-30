@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh 'sudo docker build -t jenkinsimg .'
+                    sh 'docker build -t jenkinsimg .'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Run tests if needed
-                    sh 'sudo docker run -it jenkinsimg'
+                    sh 'docker run -it jenkinsimg'
                 }
             }
         }
